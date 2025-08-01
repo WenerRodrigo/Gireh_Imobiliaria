@@ -1,11 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from "./components/Header"
+import Home from "./pages/Home"
 
 
 function App() {
 
   return (
-    <div>
-      <p className="text-4xl text-purple-700">Hellow Word</p>
-    </div>
+    <Router>
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   )
 }
 
