@@ -4,6 +4,7 @@ import SearchBar from "../components/SearchBar";
 import { useEffect, useState } from "react";
 import type { SearchFilters } from "../types/Property";
 import { properties } from "../data/properties";
+import PropertyCard from "../components/PropertyCard";
 
 
 const Home: React.FC = () => {
@@ -115,8 +116,15 @@ const Home: React.FC = () => {
           </div>
 
           {/** Imóveis em Destaque */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            
+                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {featuredProperties.map((property) => (
+              <PropertyCard
+                key={property.id}
+                property={property}
+                isFavorite={favorites.includes(property.id)}
+                onToggleFavorite={handleToggleFavorite}
+              />
+            ))}
           </div>
 
           <div className="text-center">
@@ -134,7 +142,17 @@ const Home: React.FC = () => {
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols2 md:grid-cols-4 gap-8">
-            {/** Mapa do Site */}
+            {stats.map((stat, index) => {
+              const Icon = stat.icon;
+              return (
+                <div key={index} className="text-center">
+                  <Icon className="h-12 w-12 mx-auto mb-4 text-yellow-400" />
+                  <div className="text-3xl font-bold mb-2">{stat.value}</div>
+                  <div className="text-blue-100">{stat.label}</div>
+                </div>
+              );
+            })}
+            
           </div>
         </div>
       </section>
@@ -151,7 +169,14 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/** Lista de Imóveis Recentes */}
+            {recentProperties.map((property) => (
+              <PropertyCard
+                key={property.id}
+                property={property}
+                isFavorite={favorites.includes(property.id)}
+                onToggleFavorite={handleToggleFavorite}
+              />
+            ))}
           </div>
         </div>
       </section>
