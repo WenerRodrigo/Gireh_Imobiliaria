@@ -197,7 +197,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         </div>
 
         {/* Description */}
-        <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+        <p className="text-gray-600 text-sm mb-4 line-clamp-1">
           {property.shortDescription}
         </p>
 
