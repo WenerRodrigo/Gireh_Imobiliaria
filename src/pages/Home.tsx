@@ -127,7 +127,7 @@ const Home: React.FC = () => {
             ))}
           </div>
 
-          <div className="text-center">
+          <div className="text-center mb-4">
             <Link
               to="/imoveis"
               className="inline-flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
