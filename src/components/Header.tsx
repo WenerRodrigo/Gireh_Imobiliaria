@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 
   const menuItems = [
     { path: "/", label: "Início", icon: Home },
-    { path: "/imovies", label: "Imóveis", icon: Building2 },
+    { path: "/imoveis", label: "Imóveis", icon: Building2 },
     { path: "/sobre", label: "Quem Somos", icon: Users },
     { path: "/contato", label: "Contato", icon: Mail },
   ];
