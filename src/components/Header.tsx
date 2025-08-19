@@ -70,35 +70,51 @@ const Header: React.FC = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
-            <nav className="flex felx-col space-y-2">
-              {menuItems.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    onClick={() => setIsMenuOpen(false)}
-                    className={`flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                      isActive(item.path)
-                        ? "text-blue-600 bg-blue-50"
-                        : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-                    }`}
-                  >
-                    <Icon className="h-4 w-4" />
-                    <span>{item.label}</span>
-                  </Link>
-                );
-              })}
-              <Link
-                to="/favoritos"
+          <div className="fixed inset-0 z-50 flex">
+            {/* Overlay escuro atrás do menu */}
+            <div
+              className="fixed inset-0 bg-black bg-opacity-50"
+              onClick={() => setIsMenuOpen(false)}
+            />
+
+            {/* Menu lateral */}
+            <div className="relative w-64 bg-white shadow-xl h-full flex flex-col p-4 z-50">
+              <button
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50 transition-colors"
+                className="absolute top-4 right-4 text-gray-700 hover:text-red-600"
               >
-                <Heart className="h-4 w-4" />
-                <span>Favoritos</span>
-              </Link>
-            </nav>
+                <X className="h-6 w-6" />
+              </button>
+
+              <nav className="mt-8 flex flex-col space-y-2">
+                {menuItems.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={`flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                        isActive(item.path)
+                          ? "text-blue-600 bg-blue-50"
+                          : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                      }`}
+                    >
+                      <Icon className="h-4 w-4" />
+                      <span>{item.label}</span>
+                    </Link>
+                  );
+                })}
+                <Link
+                  to="/favoritos"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50 transition-colors"
+                >
+                  <Heart className="h-4 w-4" />
+                  <span>Favoritos</span>
+                </Link>
+              </nav>
+            </div>
           </div>
         )}
       </div>
