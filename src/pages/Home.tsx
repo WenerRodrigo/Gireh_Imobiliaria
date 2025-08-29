@@ -141,7 +141,7 @@ const Home: React.FC = () => {
 
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => {
               const Icon = stat.icon;
               return (
