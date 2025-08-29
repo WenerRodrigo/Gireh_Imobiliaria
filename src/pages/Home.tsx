@@ -62,11 +62,11 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center">
               Encontre o Imóvel dos Seus{" "}
               <span className="text-yellow-400">Sonhos</span>
             </h1>
-            <p className="text--xl md:text-2xl mb-8">
+            <p className="text-xl md:text-2xl mb-8 text-center">
               Há mais de 20 anos conectando pessoas aos seus lares ideais.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -103,7 +103,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="px-16">
+      <section className="lg:px-16 md:px-8">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
