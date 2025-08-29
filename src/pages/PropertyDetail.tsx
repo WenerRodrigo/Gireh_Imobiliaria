@@ -211,7 +211,7 @@ const PropertyDetail: React.FC = () => {
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <span className="text-sm text-gray-500 font-medium">Cód. {property.code}</span>
-                  <h1 className="text-3xl font-bold text-gray-900 mt-1">{property.title}</h1>
+                  <h1 className="lg:text-3xl md:text-xl font-bold text-gray-900 mt-1">{property.title}</h1>
                 </div>
                 <div className="text-right">
                   <div className="lg:text-3xl md:text-xl font-bold text-blue-600">
