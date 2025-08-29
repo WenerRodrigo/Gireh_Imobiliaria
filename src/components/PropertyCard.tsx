@@ -245,6 +245,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* View Details Button */}
         <Link
           to={`/imovel/${property.id}`}
+          onClick={() => window.scrollTo(0, 0)}
           className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-center block font-medium"
         >
           Ver mais detalhes

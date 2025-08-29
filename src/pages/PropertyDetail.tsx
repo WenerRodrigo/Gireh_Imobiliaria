@@ -214,7 +214,7 @@ const PropertyDetail: React.FC = () => {
                   <h1 className="text-3xl font-bold text-gray-900 mt-1">{property.title}</h1>
                 </div>
                 <div className="text-right">
-                  <div className="text-3xl font-bold text-blue-600">
+                  <div className="lg:text-3xl md:text-xl font-bold text-blue-600">
                     {formatPrice(property.price, property.operation)}
                   </div>
                   <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium mt-2 ${
