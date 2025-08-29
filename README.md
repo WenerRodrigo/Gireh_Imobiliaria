@@ -1,69 +1,56 @@
-# React + TypeScript + Vite
+🏡 Shadai Imobiliária
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Encontre o imóvel dos seus sonhos!
+Este projeto é uma aplicação web para uma imobiliária, desenvolvida com React, TypeScript e Tailwind CSS, com foco em performance, design moderno e experiência do usuário intuitiva.
 
-Currently, two official plugins are available:
+🚀 Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+URL do projeto: https://gireh-imobiliaria.vercel.app/
 
-## Expanding the ESLint configuration
+<img width="1421" height="728" alt="image" src="https://github.com/user-attachments/assets/ad26da5b-ef3e-4790-a419-b45f93fcfbf8" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<img width="1422" height="730" alt="image" src="https://github.com/user-attachments/assets/b0525db1-1bf2-47f2-9978-a7e4d7b082c7" />
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<img width="1419" height="896" alt="image" src="https://github.com/user-attachments/assets/9a6a0998-7222-49b5-99c6-38c9a68c8823" />
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+✨ Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+✔️ Página inicial com chamada para ação (CTA)
+✔️ Busca avançada de imóveis por código, operação e cidade
+✔️ Listagem de imóveis com filtros dinâmicos
+✔️ Página Quem Somos apresentando a história da empresa
+✔️ Página de contato para enviar mensagens
+✔️ Sistema de favoritos para salvar imóveis
+✔️ Design responsivo para dispositivos móveis e desktops
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠️ Tecnologias Utilizadas
+
+React JS
+TypeScript
+Tailwind CSS
+React Router DOM
+Lucide Icons
+
+
+⚡ Como Rodar o Projeto
+✅ Pré-requisitos
+
+Node.js instalado
+
+npm ou yarn instalado
+
+✅ Instalação
+
+# Clone este repositório
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
+# Acesse a pasta do projeto
+cd nome-do-repositorio
+
+# Instale as dependências
+npm install
+
+npm run dev
+
