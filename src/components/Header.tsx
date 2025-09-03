@@ -1,11 +1,12 @@
 import { Building2, Heart, Home, Mail, Menu, Users, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.png";
+import { getClientConfig } from "../config/getClientConfig"
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const config = getClientConfig();
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -22,10 +23,10 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
             <div className="flex-shrink-0">
-              <img className="h-8 w-8" src={logo} alt="Logo" />
+              <img className="h-8 w-8" src={config.logo} alt="Logo" />
             </div>
             <span className="text-xl font-bold text-gray-900">
-              Shadai Imobiliária
+              {config.name}
             </span>
           </Link>
 
