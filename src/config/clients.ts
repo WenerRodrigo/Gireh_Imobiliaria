@@ -1,5 +1,5 @@
 import logoShadai from "../assets/logo.png";
-
+import logoRibeirao from "../assets/logo-clienteX.png";
 
 export const clients = {
   shadai: {
@@ -9,30 +9,29 @@ export const clients = {
       primary: "#1E3A8A",
       secondary: "#FACC15",
     },
-  },
-  contact: {
-    phone: "(16) 1234-5678",
-    whatsapp: "(16) 99876-9999",
-    email: "contato@shadaiimobiliaria.com.br",
-    address: "Av. Prof João Fiusa - Sala 545, Ribeirão Preto - SP",
-  },
-  legal: {
-    creci: "12345-J",
-    cnpj: "12.345.678/0001-99",
-  },
-  seo: {
-    title: "Shadai Imobiliária | Compra, Venda e Aluguel de Imóveis",
-    description:
-      "A Shadai Imobiliária oferece as melhores opções de imóveis para compra, venda e aluguel em Ribeirão Preto.",
+    contact: {
+      phone: "(16) 1234-5678",
+      whatsapp: "(16) 99876-9999",
+      email: "contato@shadaiimobiliaria.com.br",
+      address: "Av. Prof João Fiusa - Sala 545, Ribeirão Preto - SP",
+    },
+    legal: {
+      creci: "12345-J",
+      cnpj: "12.345.678/0001-99",
+    },
+    seo: {
+      title: "Shadai Imobiliária | Compra, Venda e Aluguel de Imóveis",
+      description:
+        "A Shadai Imobiliária oferece as melhores opções de imóveis para compra, venda e aluguel em Ribeirão Preto.",
+    },
   },
 
-  // Exemplo de outro cliente
   imobiliariaRibeirao: {
     name: "Imobiliária Ribeirão",
-    logo: "/src/assets/logo-clienteX.png",
+    logo: logoRibeirao,
     colors: {
-      primary: "#DC2626", // vermelho
-      secondary: "#10B981", // verde
+      primary: "#333333", // vermelho
+      secondary: "#DEDEDE", // verde
     },
     contact: {
       phone: "(11) 3333-3333",
