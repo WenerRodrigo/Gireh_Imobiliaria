@@ -1,7 +1,10 @@
+import logoShadai from "../assets/logo.png";
+
+
 export const clients = {
   shadai: {
     name: "Shadai Imobiliária",
-    logo: "/src/assets/logo.png",
+    logo: logoShadai,
     colors: {
       primary: "#1E3A8A",
       secondary: "#FACC15",

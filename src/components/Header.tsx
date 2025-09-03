@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
             <div className="flex-shrink-0">
-              <img className="h-8 w-8" src={config.logo} alt="Logo" />
+              <img className="h-8 w-8" src={config.logo} alt={config.name} />
             </div>
             <span className="text-xl font-bold text-gray-900">
               {config.name}
